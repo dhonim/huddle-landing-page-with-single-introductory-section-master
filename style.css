@@ -1,0 +1,64 @@
+:root{
+    --Violet: hsl(257, 40%, 49%);
+--SoftMagenta: hsl(300, 69%, 71%);
+--font1:'Poppins', sans-serif;
+--font2:'Open Sans', sans-serif;
+}
+/* font */
+.font1-title{
+    font-family:var(--font1) ;
+    font-weight: 600;
+    text-align: center;
+}
+.font1-text{
+    font-family:var(--font1) ;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: center;
+}
+.font2-text{
+    font-family:var(--font2) ;
+    font-weight: 400;
+    color: var(--SoftMagenta);
+}
+.bg_hero{
+    background-image: url(images/bg-mobile.svg);
+    background-color:var(--Violet);
+}
+.bg-white{
+    background-color: white;
+    border-radius: 15px;
+    width: 220px;
+}
+
+
+
+
+.circle{
+    border: 1px solid white;
+    width: 27px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (min-width:700px){
+    .bg_hero{
+        background-image: url(images/bg-desktop.svg);
+        background-color:var(--Violet);
+     
+    }
+    .font1-text{
+        text-align: justify;
+    }
+    .font1-title{
+        text-align: justify;
+    }
+}
+@media only screen and (min-width:375px){
+   .mobile{
+    margin: 120px;
+   }
+
+}
